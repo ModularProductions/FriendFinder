@@ -10,20 +10,27 @@ module.exports = function(app) {
   app.post("/data", function(req, res) {
     console.log("friend data received =", req.body);
     var user = req.body;
-    forEach(friendData, function() {
-      this.totalDifference = 0;
-      for (var i = 0; i < 26; i++) {
-        this.compatibility += Math.abs(this.scores[i] - user.scores[i]);
+    friendData.forEach(function(ele) {
+      ele.totalDifference = 0;
+      for (var i = 0; i < 5; i++) {
+        ele.totalDifference += Math.abs(parseFloat(ele.scores[i]) - parseFloat(user.scores[i]));
       }
     })
+    console.log(friendData.sort(function (a, b) {
+      return a.totalDifference - b.totalDifference;
+    }));
     friendData.sort(function (a, b) {
       return a.totalDifference - b.totalDifference;
     });
-
+    console.log("match =", friendData[0]);
+    res.json(friendData[0]);
   });
 
+  app.post("/data/friends", function() {
+    res.json()
+  })
+
   app.post("/data/clear", function() {
-    // Empty out the arrays of data
     friendData = [];
     console.log("Friend array emptied!");
   });

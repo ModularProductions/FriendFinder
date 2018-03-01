@@ -9,8 +9,28 @@
   <meta name="author" content="MTH">
   <meta name="keywords" content="">
 
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
 
+
+    .name {
+      font-weight: "bold";
+      font-size: 2em;
+    }
+
+    .image {
+      width: 50%;
+    }
+
+    #userImage {
+      display: inline-block;
+    }
+
+    #matchImage {
+      display: inline-block;
+    }
+
+  </style>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -34,289 +54,315 @@
   
       <h3><strong>Question 1</strong></h3>
       <h4>Success is based on survival of the fittest; I am not concerned about the losers.</h4>
-      <select class="chzn-select" id="q1" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q1_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
-  
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q1" value="1">1</td>
+          <td><input type="radio" name="q1" value="2">2</td>
+          <td><input type="radio" name="q1" value="3">3</td>
+          <td><input type="radio" name="q1" value="4">4</td>
+          <td><input type="radio" name="q1" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
+
       <h3><strong>Question 2</strong></h3>
       <h4>I find myself in the same kinds of trouble, time after time.</h4>
-      <select class="chzn-select" id="q2" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q2_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q2" value="1">1</td>
+          <td><input type="radio" name="q2" value="2">2</td>
+          <td><input type="radio" name="q2" value="3">3</td>
+          <td><input type="radio" name="q2" value="4">4</td>
+          <td><input type="radio" name="q2" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 3</strong></h3>
       <h4>For me, what's right is whatever I can get away with.</h4>
-      <select class="chzn-select" id="q3" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q3_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q3" value="1">1</td>
+          <td><input type="radio" name="q3" value="2">2</td>
+          <td><input type="radio" name="q3" value="3">3</td>
+          <td><input type="radio" name="q3" value="4">4</td>
+          <td><input type="radio" name="q3" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 4</strong></h3>
       <h4>I am often bored.</h4>
-      <select class="chzn-select" id="q4" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q4_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q4" value="1">1</td>
+          <td><input type="radio" name="q4" value="2">2</td>
+          <td><input type="radio" name="q4" value="3">3</td>
+          <td><input type="radio" name="q4" value="4">4</td>
+          <td><input type="radio" name="q4" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 5</strong></h3>
       <h4>In today's world, I feel justified in doing anything I can get away with to succeed.</h4>
-      <select class="chzn-select" id="q5" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q5_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result" data-option-array-index="1" style="">1 (Strongly Disagree)</li><li class="active-result" data-option-array-index="2" style="">2</li><li class="active-result" data-option-array-index="3" style="">3</li><li class="active-result" data-option-array-index="4" style="">4</li><li class="active-result" data-option-array-index="5" style="">5 (Strongly Agree)</li></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q5" value="1">1</td>
+          <td><input type="radio" name="q5" value="2">2</td>
+          <td><input type="radio" name="q5" value="3">3</td>
+          <td><input type="radio" name="q5" value="4">4</td>
+          <td><input type="radio" name="q5" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
-      <h3><strong>Question 6</strong></h3>
+      <!-- <h3><strong>Question 6</strong></h3>
       <h4>I find that I am able to pursue one goal for a long time.</h4>
-      <select class="chzn-select" id="q6" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q6_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q6" value="1">1</td>
+          <td><input type="radio" name="q6" value="2">2</td>
+          <td><input type="radio" name="q6" value="3">3</td>
+          <td><input type="radio" name="q6" value="4">4</td>
+          <td><input type="radio" name="q6" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 7</strong></h3>
       <h4>My main purpose in life is getting as many goodies as I can.</h4>
-      <select class="chzn-select" id="q7" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q7_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q7" value="1">1</td>
+          <td><input type="radio" name="q7" value="2">2</td>
+          <td><input type="radio" name="q7" value="3">3</td>
+          <td><input type="radio" name="q7" value="4">4</td>
+          <td><input type="radio" name="q7" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 8</strong></h3>
       <h4>I don't plan anything very far in advance.</h4>
-      <select class="chzn-select" id="q8" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q8_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q8" value="1">1</td>
+          <td><input type="radio" name="q8" value="2">2</td>
+          <td><input type="radio" name="q8" value="3">3</td>
+          <td><input type="radio" name="q8" value="4">4</td>
+          <td><input type="radio" name="q8" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 9</strong></h3>
       <h4>Making a lot of money is my most important goal.</h4>
-      <select class="chzn-select" id="q9" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q9_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q9" value="1">1</td>
+          <td><input type="radio" name="q9" value="2">2</td>
+          <td><input type="radio" name="q9" value="3">3</td>
+          <td><input type="radio" name="q9" value="4">4</td>
+          <td><input type="radio" name="q9" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 10</strong></h3>
       <h4>I quickly lose interest in tasks I start.</h4>
-      <select class="chzn-select" id="q10" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q10_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q10" value="1">1</td>
+          <td><input type="radio" name="q10" value="2">2</td>
+          <td><input type="radio" name="q10" value="3">3</td>
+          <td><input type="radio" name="q10" value="4">4</td>
+          <td><input type="radio" name="q10" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 11</strong></h3>
       <h4>I let others worry about higher values; my main concern is with the bottom line.</h4>
-      <select class="chzn-select" id="q11" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q11_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q11" value="1">1</td>
+          <td><input type="radio" name="q11" value="2">2</td>
+          <td><input type="radio" name="q11" value="3">3</td>
+          <td><input type="radio" name="q11" value="4">4</td>
+          <td><input type="radio" name="q11" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 12</strong></h3>
       <h4>Most of my problems are due to the fact that other people just don't understand me.</h4>
-      <select class="chzn-select" id="q12" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q12_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q12" value="1">1</td>
+          <td><input type="radio" name="q12" value="2">2</td>
+          <td><input type="radio" name="q12" value="3">3</td>
+          <td><input type="radio" name="q12" value="4">4</td>
+          <td><input type="radio" name="q12" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 13</strong></h3>
       <h4>People who are stupid enough to get ripped off usually deserve it.</h4>
-      <select class="chzn-select" id="q13" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q13_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q13" value="1">1</td>
+          <td><input type="radio" name="q13" value="2">2</td>
+          <td><input type="radio" name="q13" value="3">3</td>
+          <td><input type="radio" name="q13" value="4">4</td>
+          <td><input type="radio" name="q13" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 14</strong></h3>
       <h4>Before I do anything, I carefully consider the possible consequences.</h4>
-      <select class="chzn-select" id="q14" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q14_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q14" value="1">1</td>
+          <td><input type="radio" name="q14" value="2">2</td>
+          <td><input type="radio" name="q14" value="3">3</td>
+          <td><input type="radio" name="q14" value="4">4</td>
+          <td><input type="radio" name="q14" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 15</strong></h3>
       <h4>Looking out for myself is my top priority.</h4>
-      <select class="chzn-select" id="q15" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q15_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q15" value="1">1</td>
+          <td><input type="radio" name="q15" value="2">2</td>
+          <td><input type="radio" name="q15" value="3">3</td>
+          <td><input type="radio" name="q15" value="4">4</td>
+          <td><input type="radio" name="q15" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 16</strong></h3>
       <h4>I have been in a lot of shouting matches with other people.</h4>
-      <select class="chzn-select" id="q16" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q16_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q16" value="1">1</td>
+          <td><input type="radio" name="q16" value="2">2</td>
+          <td><input type="radio" name="q16" value="3">3</td>
+          <td><input type="radio" name="q16" value="4">4</td>
+          <td><input type="radio" name="q16" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 17</strong></h3>
       <h4>I tell other people what they want to hear so that they will do what I want them to do.</h4>
-      <select class="chzn-select" id="q17" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q17_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q17" value="1">1</td>
+          <td><input type="radio" name="q17" value="2">2</td>
+          <td><input type="radio" name="q17" value="3">3</td>
+          <td><input type="radio" name="q17" value="4">4</td>
+          <td><input type="radio" name="q17" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 18</strong></h3>
       <h4>When I get frustrated, I often "let off steam" by blowing my top.</h4>
-      <select class="chzn-select" id="q18" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q18_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q18" value="1">1</td>
+          <td><input type="radio" name="q18" value="2">2</td>
+          <td><input type="radio" name="q18" value="3">3</td>
+          <td><input type="radio" name="q18" value="4">4</td>
+          <td><input type="radio" name="q18" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 19</strong></h3>
       <h4>I would be upset if my success came at someone else's expense.</h4>
-      <select class="chzn-select" id="q19" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q19_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q19" value="1">1</td>
+          <td><input type="radio" name="q19" value="2">2</td>
+          <td><input type="radio" name="q19" value="3">3</td>
+          <td><input type="radio" name="q19" value="4">4</td>
+          <td><input type="radio" name="q19" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 20</strong></h3>
       <h4>Love is overrated.</h4>
-      <select class="chzn-select" id="q20" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q20_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q20" value="1">1</td>
+          <td><input type="radio" name="q20" value="2">2</td>
+          <td><input type="radio" name="q20" value="3">3</td>
+          <td><input type="radio" name="q20" value="4">4</td>
+          <td><input type="radio" name="q20" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 21</strong></h3>
       <h4>I often admire a really clever scam.</h4>
-      <select class="chzn-select" id="q21" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q21_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q21" value="1">1</td>
+          <td><input type="radio" name="q21" value="2">2</td>
+          <td><input type="radio" name="q21" value="3">3</td>
+          <td><input type="radio" name="q21" value="4">4</td>
+          <td><input type="radio" name="q21" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 22</strong></h3>
       <h4>I make a point of trying not to hurt others in pursuit of my goals.</h4>
-      <select class="chzn-select" id="q22" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q22_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q22" value="1">1</td>
+          <td><input type="radio" name="q22" value="2">2</td>
+          <td><input type="radio" name="q22" value="3">3</td>
+          <td><input type="radio" name="q22" value="4">4</td>
+          <td><input type="radio" name="q22" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 23</strong></h3>
       <h4>I enjoy manipulating other people's feelings.</h4>
-      <select class="chzn-select" id="q23" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q23_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q23" value="1">1</td>
+          <td><input type="radio" name="q23" value="2">2</td>
+          <td><input type="radio" name="q23" value="3">3</td>
+          <td><input type="radio" name="q23" value="4">4</td>
+          <td><input type="radio" name="q23" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 24</strong></h3>
       <h4>I feel bad if my words or actions cause someone else to feel emotional pain.</h4>
-      <select class="chzn-select" id="q24" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q24_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q24" value="1">1</td>
+          <td><input type="radio" name="q24" value="2">2</td>
+          <td><input type="radio" name="q24" value="3">3</td>
+          <td><input type="radio" name="q24" value="4">4</td>
+          <td><input type="radio" name="q24" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
   
       <h3><strong>Question 25</strong></h3>
       <h4>Even if I were trying very hard to sell something, I wouldn't lie about it.</h4>
-      <select class="chzn-select" id="q25" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q25_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q25" value="1">1</td>
+          <td><input type="radio" name="q25" value="2">2</td>
+          <td><input type="radio" name="q25" value="3">3</td>
+          <td><input type="radio" name="q25" value="4">4</td>
+          <td><input type="radio" name="q25" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table>
       
       <h3><strong>Question 26</strong></h3>
       <h4>Cheating is not justified because it is unfair to others.</h4>
-      <select class="chzn-select" id="q26" style="display: none;">
-        <option value=""></option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select><div class="chosen-container chosen-container-single" style="width: 155px;" title="" id="q26_chosen"><a class="chosen-single chosen-default"><span>Select an Option</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+      <table>
+        <tr>
+          <td>(Strongly Disagree) <input type="radio" name="q26" value="1">1</td>
+          <td><input type="radio" name="q26" value="2">2</td>
+          <td><input type="radio" name="q26" value="3">3</td>
+          <td><input type="radio" name="q26" value="4">4</td>
+          <td><input type="radio" name="q26" value="5">5 (Strongly Agree)</td>
+        </tr>
+      </table> -->
   
       <br>
       <br>
@@ -326,25 +372,85 @@
         Submit</button>
   
       <hr>
-      <footer class="footer">
-        <div class="container">
-          <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
-        </div>
-      </footer>
     </div>
   </div> <!-- wrap -->
-  <footer>
+
+  <div id="matchModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Best Match</h4>
+        </div>
+        <div class="modal-body">
+          <div id="user">
+            <p id="userName" class="name"></p>
+            <img id="userImage" class="image"/>
+          </div>
+          <p><em>meet</em></p>
+          <div id="match">
+            <img id="matchImage" class="image" />
+            <p id="matchName" class="name"></p>
+          </div>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <footer class="footer">
+    <div class="container">
+      <p><a href="/api/data">API Friends List</a> | <a href="data/clear">Revert Friends to Default</a></p>
+    </div>
   </footer>
   
-  <!-- ...... jQuery minified CDN ...... -->
   <script 
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous">
   </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script type="text/javascript">
-    $(function(){
-      $(".chzn-select").chosen();
+    $("#submit").on("click", function() {
+      var user = {
+        name : $("#name").val().trim(),
+        photo : $("#photo").val().trim(),
+        scores : [],
+      };
+      for (var i = 1; i < 6; i++) {
+        console.log("value for question "+i+" =", $("input[name='q"+i+"']:checked").val());
+        if ($("input[name='q"+i+"']:checked").val() !== undefined) {
+          user.scores.push($("input[name='q"+i+"']:checked").val());
+        }
+      }
+      console.dir("dir =", user);
+      console.log("log =", user);
+      if ($("#name").val() === "") {
+        alert("Please enter your name!");
+      } else {
+        if ($("#photo").val() === "") {
+          alert("Please provide a photo link!");
+        } else {
+          if (user.scores.length < 5) {
+            alert("Please answer all questions!");
+          } else {
+            console.log("(survey) user =", user);
+            $.post({
+              url: "/data",
+              data: user,
+              traditional: true
+            }, function(data) {
+              $("#userName").text(user.name);
+              $("#userImage").attr("src", user.photo);
+              $("#matchName").text(data.name);
+              $("#matchImage").attr("src", data.photo);
+              $("#matchModal").modal("toggle");
+            }, "json")
+          }
+        }
+      }
     });
   </script>
 
