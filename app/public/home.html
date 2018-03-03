@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>  
-  <title></title>
+  <title>Psycho Friend Finder</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,27 +15,39 @@
   <![endif]-->
 </head>
 <body>
-
   <div id="wrap">
     <div class="container">
-      <header>
-        <nav>
-        </nav>
-      </header>
-      <section>
-      </section>
-    </div> <!-- container -->
-  </div> <!-- wrap -->
-  <footer>
-  </footer>
+      <div class="jumbotron">
+
+      <h1>Psycho Friend Finder</h1>
+      <hr>
   
+      <h2>Helping you find somebody as crazy as you since 2018.</h2>
+      <h2>Answer some questions, then find the nut who matches you best!</h2>
+      <br>
+      <div>
+        <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/data">API Friends List</a> | <a href="#" id="refresh">Revert Friends to Default</a> | <a href="https://github.com/ModularProductions/FriendFinder.git">GitHub Repo</a> | <a href="https://openpsychometrics.org/tests/LSRP.php">Take the full Levenson Self-Report Psychopathy Scale here!</a></p>
+      </div>
+    </footer>
+  </div> <!-- wrap -->  
   <script 
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous">
   </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $("#refresh").on("click", function() {
+      event.preventDefault();
+      $.ajax("data/clear").done(function() {
+        alert("Friend array reset to default.");
+      });
+    })
   </script>
-
 </body>
 </html>

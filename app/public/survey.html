@@ -11,8 +11,6 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <style>
-
-
     .name {
       font-weight: "bold";
       font-size: 2em;
@@ -30,6 +28,13 @@
       display: inline-block;
     }
 
+    td {
+      padding: 0 .5em;
+    }
+
+    input[type=radio] {
+      margin-right: .25em;
+    }
   </style>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -40,7 +45,7 @@
     <div class="container">
       <div class="container">
 
-      <h2>Survey Questions</h2>
+      <h2>Self-Reporting Questions</h2>
       <hr>
   
       <h3><strong>About You</strong></h3>
@@ -112,7 +117,7 @@
         </tr>
       </table>
   
-      <!-- <h3><strong>Question 6</strong></h3>
+      <h3><strong>Question 6</strong></h3>
       <h4>I find that I am able to pursue one goal for a long time.</h4>
       <table>
         <tr>
@@ -171,199 +176,6 @@
           <td><input type="radio" name="q10" value="5">5 (Strongly Agree)</td>
         </tr>
       </table>
-  
-      <h3><strong>Question 11</strong></h3>
-      <h4>I let others worry about higher values; my main concern is with the bottom line.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q11" value="1">1</td>
-          <td><input type="radio" name="q11" value="2">2</td>
-          <td><input type="radio" name="q11" value="3">3</td>
-          <td><input type="radio" name="q11" value="4">4</td>
-          <td><input type="radio" name="q11" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-  
-      <h3><strong>Question 12</strong></h3>
-      <h4>Most of my problems are due to the fact that other people just don't understand me.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q12" value="1">1</td>
-          <td><input type="radio" name="q12" value="2">2</td>
-          <td><input type="radio" name="q12" value="3">3</td>
-          <td><input type="radio" name="q12" value="4">4</td>
-          <td><input type="radio" name="q12" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-  
-      <h3><strong>Question 13</strong></h3>
-      <h4>People who are stupid enough to get ripped off usually deserve it.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q13" value="1">1</td>
-          <td><input type="radio" name="q13" value="2">2</td>
-          <td><input type="radio" name="q13" value="3">3</td>
-          <td><input type="radio" name="q13" value="4">4</td>
-          <td><input type="radio" name="q13" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-  
-      <h3><strong>Question 14</strong></h3>
-      <h4>Before I do anything, I carefully consider the possible consequences.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q14" value="1">1</td>
-          <td><input type="radio" name="q14" value="2">2</td>
-          <td><input type="radio" name="q14" value="3">3</td>
-          <td><input type="radio" name="q14" value="4">4</td>
-          <td><input type="radio" name="q14" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-  
-      <h3><strong>Question 15</strong></h3>
-      <h4>Looking out for myself is my top priority.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q15" value="1">1</td>
-          <td><input type="radio" name="q15" value="2">2</td>
-          <td><input type="radio" name="q15" value="3">3</td>
-          <td><input type="radio" name="q15" value="4">4</td>
-          <td><input type="radio" name="q15" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-  
-      <h3><strong>Question 16</strong></h3>
-      <h4>I have been in a lot of shouting matches with other people.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q16" value="1">1</td>
-          <td><input type="radio" name="q16" value="2">2</td>
-          <td><input type="radio" name="q16" value="3">3</td>
-          <td><input type="radio" name="q16" value="4">4</td>
-          <td><input type="radio" name="q16" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-  
-      <h3><strong>Question 17</strong></h3>
-      <h4>I tell other people what they want to hear so that they will do what I want them to do.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q17" value="1">1</td>
-          <td><input type="radio" name="q17" value="2">2</td>
-          <td><input type="radio" name="q17" value="3">3</td>
-          <td><input type="radio" name="q17" value="4">4</td>
-          <td><input type="radio" name="q17" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-  
-      <h3><strong>Question 18</strong></h3>
-      <h4>When I get frustrated, I often "let off steam" by blowing my top.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q18" value="1">1</td>
-          <td><input type="radio" name="q18" value="2">2</td>
-          <td><input type="radio" name="q18" value="3">3</td>
-          <td><input type="radio" name="q18" value="4">4</td>
-          <td><input type="radio" name="q18" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-  
-      <h3><strong>Question 19</strong></h3>
-      <h4>I would be upset if my success came at someone else's expense.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q19" value="1">1</td>
-          <td><input type="radio" name="q19" value="2">2</td>
-          <td><input type="radio" name="q19" value="3">3</td>
-          <td><input type="radio" name="q19" value="4">4</td>
-          <td><input type="radio" name="q19" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-  
-      <h3><strong>Question 20</strong></h3>
-      <h4>Love is overrated.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q20" value="1">1</td>
-          <td><input type="radio" name="q20" value="2">2</td>
-          <td><input type="radio" name="q20" value="3">3</td>
-          <td><input type="radio" name="q20" value="4">4</td>
-          <td><input type="radio" name="q20" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-  
-      <h3><strong>Question 21</strong></h3>
-      <h4>I often admire a really clever scam.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q21" value="1">1</td>
-          <td><input type="radio" name="q21" value="2">2</td>
-          <td><input type="radio" name="q21" value="3">3</td>
-          <td><input type="radio" name="q21" value="4">4</td>
-          <td><input type="radio" name="q21" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-  
-      <h3><strong>Question 22</strong></h3>
-      <h4>I make a point of trying not to hurt others in pursuit of my goals.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q22" value="1">1</td>
-          <td><input type="radio" name="q22" value="2">2</td>
-          <td><input type="radio" name="q22" value="3">3</td>
-          <td><input type="radio" name="q22" value="4">4</td>
-          <td><input type="radio" name="q22" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-  
-      <h3><strong>Question 23</strong></h3>
-      <h4>I enjoy manipulating other people's feelings.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q23" value="1">1</td>
-          <td><input type="radio" name="q23" value="2">2</td>
-          <td><input type="radio" name="q23" value="3">3</td>
-          <td><input type="radio" name="q23" value="4">4</td>
-          <td><input type="radio" name="q23" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-  
-      <h3><strong>Question 24</strong></h3>
-      <h4>I feel bad if my words or actions cause someone else to feel emotional pain.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q24" value="1">1</td>
-          <td><input type="radio" name="q24" value="2">2</td>
-          <td><input type="radio" name="q24" value="3">3</td>
-          <td><input type="radio" name="q24" value="4">4</td>
-          <td><input type="radio" name="q24" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-  
-      <h3><strong>Question 25</strong></h3>
-      <h4>Even if I were trying very hard to sell something, I wouldn't lie about it.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q25" value="1">1</td>
-          <td><input type="radio" name="q25" value="2">2</td>
-          <td><input type="radio" name="q25" value="3">3</td>
-          <td><input type="radio" name="q25" value="4">4</td>
-          <td><input type="radio" name="q25" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table>
-      
-      <h3><strong>Question 26</strong></h3>
-      <h4>Cheating is not justified because it is unfair to others.</h4>
-      <table>
-        <tr>
-          <td>(Strongly Disagree) <input type="radio" name="q26" value="1">1</td>
-          <td><input type="radio" name="q26" value="2">2</td>
-          <td><input type="radio" name="q26" value="3">3</td>
-          <td><input type="radio" name="q26" value="4">4</td>
-          <td><input type="radio" name="q26" value="5">5 (Strongly Agree)</td>
-        </tr>
-      </table> -->
-  
       <br>
       <br>
   
@@ -373,6 +185,11 @@
   
       <hr>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/data">API Friends List</a> | <a href="#" id="refresh">Revert Friends to Default</a> | <a href="https://github.com/ModularProductions/FriendFinder.git">GitHub Repo</a> | <a href="https://openpsychometrics.org/tests/LSRP.php">Take the full Levenson Self-Report Psychopathy Scale here!</a></p>
+      </div>
+    </footer>
   </div> <!-- wrap -->
 
   <div id="matchModal" class="modal fade" tabindex="-1" role="dialog">
@@ -400,11 +217,6 @@
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
-  <footer class="footer">
-    <div class="container">
-      <p><a href="/api/data">API Friends List</a> | <a href="data/clear">Revert Friends to Default</a></p>
-    </div>
-  </footer>
   
   <script 
     src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -419,26 +231,28 @@
         photo : $("#photo").val().trim(),
         scores : [],
       };
-      for (var i = 1; i < 6; i++) {
-        console.log("value for question "+i+" =", $("input[name='q"+i+"']:checked").val());
-        if ($("input[name='q"+i+"']:checked").val() !== undefined) {
-          user.scores.push($("input[name='q"+i+"']:checked").val());
+      for (var i = 0; i < 10; i++) {
+        console.log("value for question "+(i+1)+" =", $("input[name='q"+(i+1)+"']:checked").val());
+        if ($("input[name='q"+(i+1)+"']:checked").val() !== undefined) {
+          user.scores.push($("input[name='q"+(i+1)+"']:checked").val());
         }
       }
-      console.dir("dir =", user);
       console.log("log =", user);
       if ($("#name").val() === "") {
         alert("Please enter your name!");
       } else {
-        if ($("#photo").val() === "") {
+        function checkURL(url) {
+          return(url.match(/\.(jpeg|jpg|gif|png)$/) != null);
+        }
+        if ($("#photo").val() === "" || !checkURL($("#photo").val())) {
           alert("Please provide a photo link!");
         } else {
-          if (user.scores.length < 5) {
+          if (user.scores.length < 10) {
             alert("Please answer all questions!");
           } else {
             console.log("(survey) user =", user);
             $.post({
-              url: "/data",
+              url: "/data/friends",
               data: user,
               traditional: true
             }, function(data) {
@@ -447,11 +261,21 @@
               $("#matchName").text(data.name);
               $("#matchImage").attr("src", data.photo);
               $("#matchModal").modal("toggle");
-            }, "json")
+              $("#name").val("");
+              $("#photo").val("");
+              $("input").prop("checked", false);
+            }, "json");
           }
         }
       }
     });
+
+    $("#refresh").on("click", function() {
+      event.preventDefault();
+      $.ajax("data/clear").done(function() {
+        alert("Friend array reset to default.");
+      });
+    })
   </script>
 
 </body>
